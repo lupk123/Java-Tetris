@@ -4,6 +4,7 @@
     看完马士兵老师的J2SE教程 跟着做了三个小项目但都是看着视频写的 这是自己独立完成的
     这个项目写了两遍 第一遍遇到瓶颈写不下去了 其实主要是自己思路没有想好 硬编码现象严重还不是很熟悉面向对象编程 
     然后在网上搜了搜 找了找思路 重新开始写的
+    还有 界面使用awt写的  swing还没有学。。。
     
 > 
 我觉得比较重要的几个思想：
@@ -26,16 +27,16 @@
 > 
 代码参考: http://www.cppblog.com/biao/archive/2010/10/31/131881.html
 ```Java
-      public int[][] rotation(){
-	  	  int[][] temp = new int[5][5];
-	    	int len = temp.length;
-		    int last = len - 1;
-	    	for(int i = 0; i < len; i++)
-    			for(int j = 0; j < len; j++)
-		    			temp[j][last - i] = box[i][j];
-	  		}
-	    	return temp;
-    	}
+public int[][] rotation(){
+  	  int[][] temp = new int[5][5];
+    	int len = temp.length;
+	    int last = len - 1;
+    	for(int i = 0; i < len; i++)
+    		for(int j = 0; j < len; j++)
+	    			temp[j][last - i] = box[i][j];
+  		}
+    	return temp;
+    }
 ```
     	
 > 
